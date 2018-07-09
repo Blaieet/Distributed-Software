@@ -1,0 +1,66 @@
+<html>
+<header>
+    <!-- Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <title>YKEA ITEM</title></header>
+<body  style="background: url(/static/images/nicebackground.jpg); background-size: 100% 100%;">
+
+{% load static %}
+
+{% if not user.is_authenticated %}
+
+    <h2> Hi, guest! Remember login in order to buy </h2>
+
+    {% block content %}
+
+      {% if form.errors %}
+        <p class="error">Sorry, that's not a valid username or password</p>
+      {% endif %}
+
+      <form action="" method="post">
+        {% csrf_token %}
+        <label for="username">User name:</label>
+        <input type="text" name="username" value="" id="username">
+        <label for="password">Password:</label>
+        <input type="password" name="password" value="" id="password">
+        <input type="hidden" name="next" value="{{ next|escape }}" />
+        <input type="submit" name ="log" value="Login" />
+      </form>
+    {% endblock %}
+
+    <h3>If you do not have an account yet, feel free to <a href="/ykea/register">Sign Up.</a></h3>
+{% else %}
+    <h2> Hi {{ user.username }} </h2>
+    <form action="" method="post">
+            {% csrf_token %}
+        <input type="submit" name ="noLog" value="Logout" />
+        </form>
+{% endif %}
+
+<div class="dropdown-divider"></div>
+
+{% for i in numItem %}
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="/ykea">Ykea</a></li>
+        <li class="breadcrumb-item"><a href="{% url 'items' i.category%}">{{i.category}}</a></li>
+        <li class="breadcrumb-item active" aria-current="page">{{i.name}}</li>
+      </ol>
+    </nav>
+    <center><div class="card" style="width: 18rem;">
+
+      <img class="card-img-top" src="{{ i.featured_photo }}" alt="">
+      <div class="card-body">
+        <h5 class="card-title">{{i.name}}</h5>
+        <p class="card-text"><p><b>Item Number:</b> {{i.item_number}}</p>
+            <p><b>Description:</b> {{i.description}}</p>
+            <p><b>Price:</b> {{i.price}}</p>
+            <p><b>Is new:</b> {{i.is_new}}</p>
+            <p><b>Size:</b> {{i.size}}</p>
+            <p><b>Category:</b> {{i.category}}</p>
+        </p>
+      </div>
+    </div></center>
+{% endfor %}
+</body>
+</html>

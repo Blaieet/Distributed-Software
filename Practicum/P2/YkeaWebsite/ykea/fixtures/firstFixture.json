@@ -1,0 +1,274 @@
+
+[
+  {
+    "model": "ykea.Item",
+    "pk": 1,
+    "fields": {
+      "item_number": "09186777",
+      "name": "KONGSWDFJORD",
+      "description" :"Divan bed, Hyllestad firm, Tustna dark grey",
+      "price" : "1488",
+      "is_new" : "True",
+      "size" : "160x200 cm",
+      "category" : "beds",
+      "featured_photo" : "https://www.ikea.com/es/en/images/products/kongsfjord-divan-bed-grey__0534657_PE649204_S4.JPG"
+    }
+  },
+   {
+   "model": "ykea.Item",
+    "pk": 2,
+    "fields": {
+      "item_number": "70294339",
+      "name": "LISBAÖFJK",
+      "description" :"Table, ash veneer",
+      "price" : "99",
+      "is_new" : "False",
+      "size" : "140x78 cm",
+      "category" : "table",
+      "featured_photo" : "https://www.ikea.com/gb/en/images/products/lisabo-coffee-table-ash-veneer__0326094_pe518131_s4.jpg"
+    }
+  },
+  {
+    "model": "ykea.Item",
+    "pk": 4,
+    "fields": {
+      "item_number": "12345678",
+      "name": "OMEGALUL",
+      "description" :"Estanteria de fusta",
+      "price" : "20",
+      "is_new" : "False",
+      "size" : "10x38 cm",
+      "category" : "furn",
+      "featured_photo" : "http://www.merkamueble.com/12143/estanteria-modelo-square-de-90-cm.jpg"
+    }
+  },
+  {
+    "model": "ykea.Item",
+    "pk": 5,
+    "fields": {
+      "item_number": "12345566",
+      "name": "Cadireta",
+      "description" :"Cadira en forma de marieta",
+      "price" : "100",
+      "is_new" : "False",
+      "size" : "140x78 cm",
+      "category" : "furn",
+      "featured_photo" : "https://i.pinimg.com/originals/d7/7e/82/d77e8201615d429689e85d2e5a069ecd.jpg"
+    }
+  },
+  {
+    "model": "ykea.Item",
+    "pk": 6,
+    "fields": {
+      "item_number": "12345555",
+      "name": "Buzz",
+      "description" :"Buzz de Toy Story",
+      "price" : "20",
+      "is_new" : "True",
+      "size" : "140x78x10 cm",
+      "category" : "toys",
+      "featured_photo" : "http://www.kmart.com.au/wcsstore/Kmart/images/ncatalog/f/3/42409243-1-f.jpg"
+    }
+  },
+  {
+    "model": "ykea.Item",
+    "pk": 7,
+    "fields": {
+      "item_number": "12344444",
+      "name": "CADD",
+      "description" :"Cadena per la bici",
+      "price" : "23",
+      "is_new" : "False",
+      "size" : "140 cm",
+      "category" : "safe",
+      "featured_photo" : "https://images-na.ssl-images-amazon.com/images/I/91DPn4vp2ML._SL1500_.jpg"
+    }
+  },
+  {
+    "model": "ykea.Item",
+    "pk": 8,
+    "fields": {
+      "item_number": "12333333",
+      "name": "Calaixet",
+      "description" :"Calaix petit",
+      "price" : "30",
+      "is_new" : "False",
+      "size" : "20x30 cm",
+      "category" : "furn",
+      "featured_photo" : "http://www.kmart.com.au/wcsstore/Kmart/images/ncatalog/f/8/42497608-1-f.jpg"
+    }
+  },
+  {
+    "model": "ykea.Item",
+    "pk": 9,
+    "fields": {
+      "item_number": "12222222",
+      "name": "Calaixot",
+      "description" :"Calaix molt gran",
+      "price" : "50",
+      "is_new" : "False",
+      "size" : "140x78x10 cm",
+      "category" : "furn",
+      "featured_photo" : "http://ep.yimg.com/ay/yhst-128771800415531/schulte-big-o-box-2-drawer-chocolate-pear-4.gif"
+    }
+  },
+  {
+    "model": "ykea.Item",
+    "pk": 10,
+    "fields": {
+      "item_number": "11111111",
+      "name": "Bob!",
+      "description" :"Bob el manetes",
+      "price" : "30",
+      "is_new" : "False",
+      "size" : "170x10x5 cm",
+      "category" : "toys",
+      "featured_photo" : "http://www.toytown.ie/wp-content/uploads/bob-the-builder-.jpg"
+
+    }
+  },
+  {
+    "model": "ykea.Item",
+    "pk": 11,
+    "fields": {
+      "item_number": "22222222",
+      "name": "LEGOPIRATE",
+      "description" :"Lego de pirates",
+      "price" : "46",
+      "is_new" : "False",
+      "size" : "20x20 cm",
+      "category" : "toys",
+      "featured_photo" : "https://images-na.ssl-images-amazon.com/images/I/91Rsv0KrI%2BL._SL1500_.jpg"
+    }
+  },
+  {
+    "model": "ykea.Item",
+    "pk": 12,
+    "fields": {
+      "item_number": "33333333",
+      "name": "Tauleta",
+      "description" :"Tauleta de nit",
+      "price" : "55",
+      "is_new" : "False",
+      "size" : "170x100x10 cm",
+      "category" : "furn",
+      "featured_photo" : "https://target.scene7.com/is/image/Target/51604706?wid=488&hei=488&fmt=pjpeg"
+    }
+  },
+  {
+    "model": "ykea.Item",
+    "pk": 13,
+    "fields": {
+      "item_number": "44444444",
+      "name": "PortaPorta",
+      "description" :"Porta doble",
+      "price" : "150",
+      "is_new" : "False",
+      "size" : "200x100 cm",
+      "category" : "furn",
+      "featured_photo" : "http://www.munsterjoinery.ie/files/c_20110808092151upvc_double_doors.jpg"
+    }
+  },
+  {
+    "model": "ykea.Item",
+    "pk": 14,
+    "fields": {
+      "item_number": "87654321",
+      "name": "Wavy Sofa",
+      "description" :"A comfortable? design sofa",
+      "price" : "3400",
+      "is_new" : "False",
+      "size" : "200x100x34 cm",
+      "category" : "sofa",
+      "featured_photo" : "https://cdn.trendir.com/wp-content/uploads/old/archives/erik-jorgensen-lounge-sofas-waves.jpg"
+    }
+  },
+  {
+    "model": "ykea.Item",
+    "pk": 15,
+    "fields": {
+      "item_number": "78654321",
+      "name": "Old Aladin",
+      "description" :"Aladin used to rest here",
+      "price" : "2000",
+      "is_new" : "False",
+      "size" : "250x90 cm",
+      "category" : "texti",
+      "featured_photo" : "https://bluevelvetcarpets.files.wordpress.com/2013/03/rug-clening.png"
+    }
+  },
+  {
+    "model": "ykea.Item",
+    "pk": 16,
+    "fields": {
+      "item_number": "68754321",
+      "name": "USA Flag",
+      "description" :"Time to put some color to your bedroom",
+      "price" : "50",
+      "is_new" : "True",
+      "size" : "100x50 cm",
+      "category" : "deco",
+      "featured_photo" : "https://cdn.freshome.com/wp-content/uploads/2013/07/4th-of-july-patriotic-bedroom.jpg"
+    }
+  },
+  {
+    "model": "ykea.Item",
+    "pk": 17,
+    "fields": {
+      "item_number": "58764321",
+      "name": "Lumos Circle",
+      "description" :"Doesn't illuminate but looks cool",
+      "price" : "100",
+      "is_new" : "True",
+      "size" : "100x50x30 cm",
+      "category" : "light",
+      "featured_photo" : "http://www.21stcenturyamsterdam.com/blog/wp-content/uploads/2012/08/vintage-lighting.jpg"
+    }
+  },
+  {
+    "model": "ykea.Item",
+    "pk": 18,
+    "fields": {
+      "item_number": "38765421",
+      "name": "Oh ven",
+      "description" :"Just 5 min for a pizza",
+      "price" : "1100",
+      "is_new" : "False",
+      "size" : "50x60x30 cm",
+      "category" : "cook",
+      "featured_photo" : "http://www.ikea.bg/images/Natural/60300939/granslos-mikrovalnova-furna-nerazhdaema-stomana-0.jpg?v=2"
+    }
+  },
+  {
+    "model": "ykea.Item",
+    "pk": 19,
+    "fields": {
+      "item_number": "28765431",
+      "name": "Dish",
+      "description" :"A set of dishes",
+      "price" : "40",
+      "is_new" : "False",
+      "size" : "10x10 cm",
+      "category" : "tablw",
+      "featured_photo" : "https://i.pinimg.com/originals/8a/94/f4/8a94f41d68886bcd8a2b3e7eb1f079da.jpg"
+    }
+  },
+  {
+    "model": "ykea.Item",
+    "pk": 20,
+    "fields": {
+      "item_number": "18765432",
+      "name": "Water dispenser",
+      "description" :"A simple tap",
+      "price" : "100",
+      "is_new" : "False",
+      "size" : "10x10x2 cm",
+      "category" : "taps",
+      "featured_photo" : "https://www.ikea.com/au/en/images/products/almaren-kitchen-mixer-tap__0519776_PE641764_S4.JPG"
+    }
+  }
+
+]
+
+
+

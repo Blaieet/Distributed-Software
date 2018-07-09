@@ -1,0 +1,68 @@
+
+ <html>
+   <head>
+    <title>Ykea</title>
+    <!-- Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+ 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ 
+    <script>
+    function compare(ips){
+        var output=""
+        for(var i=0;i < ips.length;i++){
+            $.ajax({
+                url: 'https://' + ips[i] + '/api/items/?'+'category='+ $("#category").val()+"&new="+ $("#nou").is(":checked")+"&price="+ $("#price").val(),
+                type: 'GET',
+                dataType: 'json',
+                success: function (data) {
+                    output+="URL Requested:: "+this.url+"<br>";
+                    for(var j =0; j < data.results.length; j++){
+
+                        output+=data['results'][j]['name']+"<br>";
+                        output+=data['results'][j]['price']+"<br>";
+                    }
+                    $("#output").append(output+"<hr>");
+                },
+                error: function(jqXHR, textStatus, errorThrown) {
+                    $("#output").append("URL Requested: "+this.url+"<br>");
+                    $("#output").append(textStatus+" "+jqXHR.status+" "+errorThrown+"<hr>");
+                },
+            });
+
+        }
+    }
+    </script>
+   </head>
+   
+   <body style="background: url(/static/images/nicebackground.jpg); background-size: 100% 100%;">
+
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="/api">Api</a></li>
+      </ol>
+    </nav>
+
+
+     <div>
+         {% block content %}
+
+          <div class="">
+                         
+               <input type="TextField" class="form-control" name="category" id="category" placeholder="Category" ><br>
+               <input type= "IntegerField" class="form-control" name="price" id="price" placeholder="Max Price" ><br>
+               <input type= "checkbox" name="nou" id="nou"> is New?
+               <hr>
+               <input type="button" id="button" value="Compare" class="btn btn-primary" onclick="compare({{ ips }})">
+               
+           </div>
+ 
+           <center><div id=output class=""></div></center>
+         {% endblock content %}
+     </div>
+ 
+   </body>
+ 
+ </html>
